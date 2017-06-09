@@ -1,0 +1,10 @@
+
+public class Shuttlecraft extends Starship {
+	
+	@Override
+	public void raiseShields() {
+		System.out.println("Shuttlecraft shields raised.");
+		
+	}
+
+}
