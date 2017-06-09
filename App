@@ -1,0 +1,30 @@
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Starship starship1 = new Starship();
+		Shuttlecraft shuttle1 = new Shuttlecraft();
+
+		starship1.setName("Constitution");
+		starship1.setType("Capital");
+		starship1.setTons(68351);
+
+		shuttle1.setName("Ticonderoga");
+		shuttle1.setType("Shuttle");
+		shuttle1.setTons(4200);
+
+		/// The subclass Shuttlecraft, of parent class Starship, can use methods
+		/// from it's parent class Starship
+
+		starship1.setCourse();
+		shuttle1.setCourse();
+
+		/// Both sub & parent class have a raiseShields method. When called, the
+		/// subclass raiseShields method overrides the one located in the parent class.
+
+		starship1.raiseShields();
+		shuttle1.raiseShields();
+
+	}
+}
