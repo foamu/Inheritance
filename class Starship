@@ -1,0 +1,37 @@
+package example;
+
+public class Starship {
+	
+	protected String name;
+	protected String type;
+	protected int tons;
+	
+	public void setCourse() {
+		System.out.println(this.getType() + " vessel " + this.getName() +  " has laid a course.");
+	}
+	
+	public void raiseShields() {
+		System.out.println("Starship shields raised");
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getTons() {
+		return tons;
+	}
+	public void setTons(int tons) {
+		this.tons = tons;
+	}
+
+}
